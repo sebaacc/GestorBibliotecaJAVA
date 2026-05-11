@@ -8,4 +8,4 @@ Parcial 1 de Interfaz Gráfica, IES. Aplicación de consola con Java.
 ## Desaİos encontrados
 
 ## Uso de IA/ herramientas externas
-Conversación con Gemini durante el proceso del proyecto: [Gemini](https://gemini.google.com/share/b7ad7dc8164e)
+Conversación con Gemini durante el proceso del proyecto: [Gemini](https://gemini.google.com/share/d3d0bd908ab8)
