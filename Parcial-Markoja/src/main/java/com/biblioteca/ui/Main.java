@@ -20,7 +20,7 @@ public class Main {
         Biblioteca biblioteca = new Biblioteca();
       
         do {            
-            System.out.println("▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓.˖✧📓°Bienvenido al gestor de Biblioteca°📓✧˖.▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓");
+            System.out.println("▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓.˖✧📓°Bienvenido/a al gestor de materiales de biblioteca°📓✧˖.▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓");
             System.out.println("__Opciones disponibles________");
             System.out.println("\n☕︎ 1. Agregar libro \n☕︎ 2. Listar materiales \n☕︎ 3. Buscar por título \n☕︎ 4. Prestar material \n☕︎ 5. Devolver Material \n☕︎ 6. Salir \n______________________________");
             System.out.println("Por favor ingrese el número de opción solicitada: ");
