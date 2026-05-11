@@ -28,5 +28,6 @@ public abstract class MaterialBiblioteca {
 
     public abstract void prestar();
     public abstract void devolver();
+    public abstract String getTitulo();
 
 }

@@ -31,4 +31,8 @@ public class Libro extends MaterialBiblioteca{
         super.prestado = false;
     }
     
+    @Override
+    public String getTitulo(){
+        return super.titulo;
+    }
 }
