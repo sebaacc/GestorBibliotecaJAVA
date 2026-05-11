@@ -45,6 +45,7 @@ public class Biblioteca {
         MaterialBiblioteca m = buscarPorTitulo(titulo);
         if (m != null) {
             m.prestar();
+            System.out.println("Material prestado con éxito!.");
         }
     }
 
@@ -52,6 +53,7 @@ public class Biblioteca {
         MaterialBiblioteca m = buscarPorTitulo(titulo);
         if (m != null) {
             m.devolver();
+            System.out.println("Material devuelto con éxito!.");
         }
     }
     

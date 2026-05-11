@@ -5,6 +5,7 @@
 package com.biblioteca.ui;
 import com.biblioteca.modelo.Biblioteca;
 import com.biblioteca.modelo.Libro;
+import com.biblioteca.modelo.MaterialBiblioteca;
 import java.util.Scanner;
 
 /**
@@ -54,19 +55,32 @@ public class Main {
                     biblioteca.listarMateriales();
                     break;
                 case 3:
+                    sc.nextLine();
                     System.out.println("✦ Eligió opción 3 - Buscar por título");
                     System.out.println("\nPor favor ingrese el título del libro: ");
-                    sc.nextLine();
-
+                    String tiBusqueda = sc.nextLine();
+                    System.out.println("Buscando...");
+                    MaterialBiblioteca resultado = biblioteca.buscarPorTitulo(tiBusqueda);
+                    System.out.println("Resultado de la búsqueda: \n" + resultado);
                     break;
                 case 4:
-                    System.out.println("opcion 4");
+                    sc.nextLine();
+                    System.out.println("✦ Eligió opción 4 - Prestar material...");
+                    System.out.println("\nPor favor ingrese titulo de material a prestar: ");
+                    String tiPrestar = sc.nextLine();
+                    System.out.println("Buscando...");
+                    biblioteca.prestarMaterial(tiPrestar);
                     break;
                 case 5:
-                    System.out.println("opcion 5");
+                    sc.nextLine();
+                    System.out.println("✦ Eligió opción 5 - Devolver Material...");
+                    System.out.println("\nPor favor ingrese titulo de material a devolver: ");
+                    String tiDevolver = sc.nextLine();
+                    System.out.println("Buscando...");
+                    biblioteca.devolverMaterial(tiDevolver);
                     break;
                 case 6:
-                    System.out.println("opcion 6");
+                    System.out.println("✦ Eligió opción 6 ...");
                     break;
                 default:
                     System.out.println("Opción no válida, por favor intente nuevamente.");
