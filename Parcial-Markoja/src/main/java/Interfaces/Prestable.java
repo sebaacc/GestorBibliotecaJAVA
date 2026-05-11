@@ -9,5 +9,6 @@ package Interfaces;
  * @author Seba
  */
 public interface Prestable {
-    
+    void prestar();
+    void devolver();
 }

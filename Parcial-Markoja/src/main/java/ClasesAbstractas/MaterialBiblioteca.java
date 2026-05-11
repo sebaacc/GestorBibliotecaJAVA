@@ -1,5 +1,7 @@
 package ClasesAbstractas;
 
+import Interfaces.Prestable;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
@@ -9,7 +11,7 @@ package ClasesAbstractas;
  *
  * @author Seba
  */
-public abstract class MaterialBiblioteca {
+public abstract class MaterialBiblioteca implements Prestable {
     
     protected String titulo;   
     protected int anio;  
@@ -25,9 +27,13 @@ public abstract class MaterialBiblioteca {
     public String toString() {
         return "Título: " + titulo + "\nAño: " + anio + "\nPrestado: " + prestado;
     }
-
+    
+    @Override
     public abstract void prestar();
+    
+    @Override
     public abstract void devolver();
+    
     public abstract String getTitulo();
 
 }
