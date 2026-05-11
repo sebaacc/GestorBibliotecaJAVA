@@ -12,7 +12,13 @@ import java.util.*;
  * @author Seba
  */
 public class Biblioteca {
-    List<MaterialBiblioteca> lista = new ArrayList<MaterialBiblioteca>();
+    List<MaterialBiblioteca> lista;
+    
+    public Biblioteca() {
+        this.lista = new ArrayList<MaterialBiblioteca>();
+        //Puedo añadir luego libros para inicializar la biblio
+    }
+    
     public void agregarMaterial(MaterialBiblioteca m) {
         lista.add(m);
     }

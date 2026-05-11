@@ -4,6 +4,7 @@
 
 package com.mycompany.parcial.markoja;
 
+import Clases.Biblioteca;
 import Clases.Libro;
 import java.util.Scanner;
 
@@ -20,15 +21,36 @@ public class Main {
         */
         Scanner sc = new Scanner(System.in);
         int opcion;
+        Biblioteca biblioteca = new Biblioteca();
       
-        do {
-            System.out.println("Bienvenido al gestor de Biblioteca");
-            System.out.println("Por favor ingrese el número de opción solicitada.");
-            System.out.println("1 - Agregar libro \n 2 - Listar materiales \n 3 - Buscar por título \n 4 - Prestar material \n 5 - Devolver Material \n 6 - Salir");
-             opcion = sc.nextInt();
+        do {            
+            System.out.println("------------------------------------------------Bienvenido al gestor de Biblioteca------------------------------------------------");
+            System.out.println("Opciones disponibles:");
+            System.out.println("1 - Agregar libro \n2 - Listar materiales \n3 - Buscar por título \n4 - Prestar material \n5 - Devolver Material \n6 - Salir");
+            System.out.println("Por favor ingrese el número de opción solicitada: ");
+            opcion = sc.nextInt();
+            
             switch (opcion) {
                 case 1:
-                    System.out.println("opcion 1");
+                    sc.nextLine();// limpiar siempre el buffer antes de un sc.NextLine, si el anterior fue un sc.NextInt. 
+                    System.out.println("Eligió opcion 1 - Agregar libro...");
+                    System.out.println("\nPor favor ingrese el tíbulo del libro: ");
+                    String titulo = sc.nextLine();
+                    
+                    System.out.println("\nPor favor ingrese el año de publicación del libro: ");
+                    int anio = sc.nextInt();
+                    sc.nextLine();
+                    
+                    System.out.println("\nPor favor ingrese el autor del libro: ");
+                    String autor = sc.nextLine();      
+                    
+                    System.out.println("\nCreando libro...");
+                    Libro libroAgregar = new Libro(titulo, anio, autor);
+                    
+                    System.out.println("\nLibro creado con éxito. \n Agregando el libro nuevo a la biblioteca...");
+                    biblioteca.agregarMaterial(libroAgregar);
+                    
+                    System.out.println("\nLibro agregado con éxito. Volviendo al menú... \n");
                     break;
                 case 2:
                     System.out.println("opcion 2");
