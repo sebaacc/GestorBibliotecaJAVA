@@ -34,6 +34,11 @@ public class Main {
                     String titulo = sc.nextLine();
                     
                     System.out.println("\nPor favor ingrese el año de publicación: ");
+                    while (!sc.hasNextInt()) {
+                        System.out.println("¡Error! Debe ingresar un número válido.");
+                        System.out.print("Intente de nuevo: ");
+                        sc.next();
+                    }
                     int anio = sc.nextInt();
                     sc.nextLine();
                     

@@ -21,6 +21,8 @@ public class Biblioteca {
         
         Libro libro1 = new Libro("Harry Potter y el misterio del príncipe",2005,"J.K. Rowling");
         lista.add(libro1);
+        Libro libro2 = new Libro("La vuelta al mundo en ochenta días",1873,"Julio Verne");
+        lista.add(libro2);
     }
     
     public void agregarMaterial(MaterialBiblioteca m) {
