@@ -4,6 +4,8 @@
 
 package com.mycompany.parcial.markoja;
 
+import Clases.Libro;
+
 /**
  *
  * @author Seba
@@ -11,6 +13,7 @@ package com.mycompany.parcial.markoja;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Libro libro1 = new Libro("Harry Potter y el misterio del príncipe",2005,"J.K. Rowling");
+        System.out.println(libro1.toString());
     }
 }

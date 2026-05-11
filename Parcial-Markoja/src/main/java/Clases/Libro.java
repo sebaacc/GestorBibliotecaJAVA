@@ -4,10 +4,31 @@
  */
 package Clases;
 
+import ClasesAbstractas.MaterialBiblioteca;
+
 /**
  *
  * @author Seba
  */
-public class Libro {
+public class Libro extends MaterialBiblioteca{
+
+    private String autor;
+  
+    public Libro (String titulo, int anio, String autor) {
+        super(titulo, anio);
+        this.autor = autor;
+    }
+  
+  //implementación de métodos abstractos
+  
+    @Override
+    public void prestar() {
+        super.prestado = true;
+    }
+
+    @Override
+    public void devolver() {
+        super.prestado = false;
+    }
     
 }
