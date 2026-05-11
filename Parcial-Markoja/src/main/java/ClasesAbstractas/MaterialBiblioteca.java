@@ -4,7 +4,6 @@ package ClasesAbstractas;
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-import java.time.Year;
 
 /**
  *
@@ -12,11 +11,11 @@ import java.time.Year;
  */
 public abstract class MaterialBiblioteca {
     
-  private String titulo;   
-    private Year anio;  
-    private Boolean prestado = false;
+    protected String titulo;   
+    protected int anio;  
+    protected Boolean prestado = false;
 
-public MaterialBiblioteca(String titulo, Year anio) {
+    public MaterialBiblioteca(String titulo, int anio) {
         this.titulo = titulo;
         this.anio = anio;
         this.prestado = false;
@@ -28,9 +27,6 @@ public MaterialBiblioteca(String titulo, Year anio) {
     }
 
     public abstract void prestar();
-
     public abstract void devolver();
-
-
 
 }
