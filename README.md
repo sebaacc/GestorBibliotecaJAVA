@@ -8,8 +8,9 @@ Parcial 1 de Interfaz Gráfica, IES. Aplicación de consola con Java.
 3.  Click en "Open project".
 4. Luego de haberse cargado correctamente, click en "Run" o F6, para correr el proyecto en la terminal de Netbeans.   
 ### Opción desde bash o cmd
-1. Ir a la carpeta donde esté el archivo .jar y abrir con click derecho una nueva terminal bash, o llegar con cd y la ruta donde esté (en bash o cmd). 
-2. Escribir: java -jar GestorBiblioteca.
+1. Ir a la carpeta del proyecto descargado, donde se encuentra el archivo GestorBiblioteca.jar.
+2. Abrir con click derecho una nueva terminal bash, o llegar con cd y copiando/pegando la ruta donde está (en bash o cmd). 
+2. Escribir en la terminal: java -jar GestorBiblioteca
 
 ## Estructura del proyecto
 
