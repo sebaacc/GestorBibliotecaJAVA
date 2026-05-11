@@ -13,9 +13,14 @@ import java.util.*;
 public class Biblioteca {
     List<MaterialBiblioteca> lista;
     
+    
+    
     public Biblioteca() {
         this.lista = new ArrayList<>();
-        //Puedo añadir luego libros para inicializar la biblio
+        //Acá puedo añadir luego libros para inicializar la biblioteca
+        
+        Libro libro1 = new Libro("Harry Potter y el misterio del príncipe",2005,"J.K. Rowling");
+        lista.add(libro1);
     }
     
     public void agregarMaterial(MaterialBiblioteca m) {
@@ -23,7 +28,7 @@ public class Biblioteca {
     }
 
     public void listarMateriales() {
-        System.out.println("Materiales de biblioteca: " + lista);
+        System.out.println("Materiales de biblioteca: \n" + lista);
     }
 
     public MaterialBiblioteca buscarPorTitulo(String titulo) {

@@ -14,10 +14,6 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        /*
-        Libro libro1 = new Libro("Harry Potter y el misterio del príncipe",2005,"J.K. Rowling");
-        System.out.println(libro1.toString());
-        */
         Scanner sc = new Scanner(System.in);
         int opcion;
         Biblioteca biblioteca = new Biblioteca();
