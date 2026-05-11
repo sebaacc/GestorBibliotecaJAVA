@@ -2,10 +2,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 
-package com.mycompany.parcial.markoja;
+package com.biblioteca.ui;
 
-import Clases.Biblioteca;
-import Clases.Libro;
+import com.biblioteca.modelo.Biblioteca;
+import com.biblioteca.modelo.Libro;
 import java.util.Scanner;
 
 /**

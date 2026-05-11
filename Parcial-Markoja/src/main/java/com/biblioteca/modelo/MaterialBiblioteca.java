@@ -1,6 +1,6 @@
-package ClasesAbstractas;
+package com.biblioteca.modelo;
 
-import Interfaces.Prestable;
+import com.biblioteca.modelo.Prestable;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
