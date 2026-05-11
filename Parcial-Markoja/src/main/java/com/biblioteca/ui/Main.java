@@ -19,24 +19,24 @@ public class Main {
         Biblioteca biblioteca = new Biblioteca();
       
         do {            
-            System.out.println("------------------------------------------------Bienvenido al gestor de Biblioteca------------------------------------------------");
+            System.out.println("▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓.˖✧📓°Bienvenido al gestor de Biblioteca°📓✧˖.▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓");
             System.out.println("Opciones disponibles:");
-            System.out.println("1 - Agregar libro \n2 - Listar materiales \n3 - Buscar por título \n4 - Prestar material \n5 - Devolver Material \n6 - Salir");
+            System.out.println("☕︎ 1. Agregar libro \n☕︎ 2. Listar materiales \n☕︎ 3. Buscar por título \n☕︎ 4. Prestar material \n☕︎ 5. Devolver Material \n☕︎ 6. Salir");
             System.out.println("Por favor ingrese el número de opción solicitada: ");
             opcion = sc.nextInt();
             
             switch (opcion) {
                 case 1:
                     sc.nextLine();// limpiar siempre el buffer antes de un sc.NextLine, si el anterior fue un sc.NextInt. 
-                    System.out.println("Eligió opcion 1 - Agregar libro...");
-                    System.out.println("\nPor favor ingrese el tíbulo del libro: ");
+                    System.out.println("✦ Eligió opción 1 - Agregar libro...");
+                    System.out.println("\nPor favor ingrese el título: ");
                     String titulo = sc.nextLine();
                     
-                    System.out.println("\nPor favor ingrese el año de publicación del libro: ");
+                    System.out.println("\nPor favor ingrese el año de publicación: ");
                     int anio = sc.nextInt();
                     sc.nextLine();
                     
-                    System.out.println("\nPor favor ingrese el autor del libro: ");
+                    System.out.println("\nPor favor ingrese el autor: ");
                     String autor = sc.nextLine();      
                     
                     System.out.println("\nCreando libro...");
@@ -49,12 +49,15 @@ public class Main {
                     break;
                 case 2:
                     sc.nextLine();// limpiar siempre el buffer antes de un sc.NextLine, si el anterior fue un sc.NextInt. 
-                    System.out.println("Eligió opcion 2 - Listar materiales...");
+                    System.out.println("✦ Eligió opción 2 - Listar materiales...");
                     System.out.println("Listando materiales...");
                     biblioteca.listarMateriales();
                     break;
                 case 3:
-                    System.out.println("opcion 3");
+                    System.out.println("✦ Eligió opción 3 - Buscar por título");
+                    System.out.println("\nPor favor ingrese el título del libro: ");
+                    sc.nextLine();
+
                     break;
                 case 4:
                     System.out.println("opcion 4");

@@ -22,7 +22,7 @@ public abstract class MaterialBiblioteca implements Prestable {
 
     @Override
     public String toString() {
-        return "\n------------------------\nTítulo: " + titulo + "\nAño: " + anio + "\nPrestado: " + prestado;
+        return "\n📓✖✖✖✖✖✖✖✖✖✖✖✖✖✖✖✖📓\nTítulo: " + titulo + "\nAño: " + anio + "\nPrestado: " + prestado;
     }
     
     @Override
