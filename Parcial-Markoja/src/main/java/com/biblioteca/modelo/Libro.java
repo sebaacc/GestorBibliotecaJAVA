@@ -4,8 +4,6 @@
  */
 package com.biblioteca.modelo;
 
-import com.biblioteca.modelo.MaterialBiblioteca;
-
 /**
  *
  * @author Seba

@@ -4,7 +4,6 @@
  */
 package com.biblioteca.modelo;
 
-import com.biblioteca.modelo.MaterialBiblioteca;
 import java.util.*;
 
 /**
@@ -15,7 +14,7 @@ public class Biblioteca {
     List<MaterialBiblioteca> lista;
     
     public Biblioteca() {
-        this.lista = new ArrayList<MaterialBiblioteca>();
+        this.lista = new ArrayList<>();
         //Puedo añadir luego libros para inicializar la biblio
     }
     

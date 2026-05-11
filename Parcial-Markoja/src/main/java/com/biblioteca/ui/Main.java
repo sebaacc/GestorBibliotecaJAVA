@@ -3,7 +3,6 @@
  */
 
 package com.biblioteca.ui;
-
 import com.biblioteca.modelo.Biblioteca;
 import com.biblioteca.modelo.Libro;
 import java.util.Scanner;
@@ -53,7 +52,10 @@ public class Main {
                     System.out.println("\nLibro agregado con éxito. Volviendo al menú... \n");
                     break;
                 case 2:
-                    System.out.println("opcion 2");
+                    sc.nextLine();// limpiar siempre el buffer antes de un sc.NextLine, si el anterior fue un sc.NextInt. 
+                    System.out.println("Eligió opcion 2 - Listar materiales...");
+                    System.out.println("Listando materiales...");
+                    biblioteca.listarMateriales();
                     break;
                 case 3:
                     System.out.println("opcion 3");
