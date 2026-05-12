@@ -1,5 +1,5 @@
-# GestorBibliotecaJAVA
-Parcial 1 de Interfaz Gráfica, IES. Aplicación CLI para gestión de materiales de biblioteca, con Java.
+# Gestor de biblioteca con Java
+Parcial 1 de Interfaz Gráfica, IES. Aplicación CLI para gestión de materiales de biblioteca, con Java. Fecha: 13/05/26.
 
 ## Instrucciones de ejecución
 
