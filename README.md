@@ -37,6 +37,10 @@ Está organizado en 2 packages:
 - Sebastián Alejo, Markoja. Rol: Desarrollador.
 
 ## Desafíos encontrados
+* En la función *agregar libro*: Se corrigió un error en el ingreso de datos donde el programa omitía el campo "Título" después de capturar un valor numérico. El problema radicaba en el residuo del salto de línea en el buffer de Scanner. Se implementó una limpieza del buffer tras cada nextInt() para asegurar que las lecturas con nextLine(), de tipo String, se capturen correctamente.
+
+* Cambio de ruta de Main class: Al renombrar el paquete de la interfaz de usuario (donde se encuentra la clase Main) a com.biblioteca.ui, ocurrió un problema al intentar ejecutar el proyecto. Fue necesario actualizar manualmente el path de la clase Main desde las propiedades del proyecto. Para configurarlo hay que seguir los siguientes pasos: File &rarr; Proyect Properties &rarr; Run &rarr; en el campo **Main Class** click en el botón Browse &rarr; seleccionar ruta del Main.
+
 
 ## Uso de IA/ herramientas externas
 Conversación con Gemini durante el proceso del proyecto: [Gemini](https://gemini.google.com/share/c7f900201371)
