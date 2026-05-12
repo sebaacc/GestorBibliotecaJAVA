@@ -12,7 +12,7 @@ public abstract class MaterialBiblioteca implements Prestable {
     
     protected String titulo;   
     protected int anio;  
-    protected Boolean prestado = false;
+    protected Boolean prestado;
 
     public MaterialBiblioteca(String titulo, int anio) {
         this.titulo = titulo;
