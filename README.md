@@ -22,6 +22,7 @@ Inicia con un saludo de bienvenida, y presenta en pantalla 6 opciones para reali
 3. Buscar libro (por título). 
 4. Prestar material (por título).
 5. Devolver material (por título).
+6. Cerrar programa.
 
 ## Estructura del proyecto
 Está organizado en 2 packages:
