@@ -44,7 +44,7 @@ Está organizado en 2 packages:
 * Creación de archivo .jar y ejecución sin IDE: Tras la duda de cómo poder ejecutar el programa en una terminal Bash, por fuera de Netbeans, investigué con Gemini como realizarlo. Tuve que realizar los siguientes pasos:
 
 1. Instalar en mi computadora el Binary zip archive de Maven desde su página oficial (ya que la terminal de Netbeans lo trae de forma nativa).
-2. Luego configurar las variables de entorno de mi sistema operativo, agregando en "PATH" la ruta donde de la carpeta bin de Maven.
+2. Luego configurar las variables de entorno de mi sistema operativo, agregando en "PATH" la ruta de la carpeta bin del Maven recientemente instalado.
 3. Por el error "no main manifest attribute, in Parcial-Markoja-1.0-SNAPSHOT.jar", tuve que modificar el .pom del proyecto, agregar la sección de "build" justo debajo de donde terminan las "properties" con lo siguiente:
 ```xml
 <build>
